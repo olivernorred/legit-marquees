@@ -4,7 +4,6 @@
 In your HTML, define one or more SVG elements with the class <code>legit-marquee</code>:
 
 <code>
-
 	<svg class="legit-marquee" viewBox="-50 -50 1070 750"
 
 		content="Hello there!"
@@ -16,7 +15,6 @@ In your HTML, define one or more SVG elements with the class <code>legit-marquee
 		
 		>
 	</svg>
-
 </code>
 
 ## Required Attributes
