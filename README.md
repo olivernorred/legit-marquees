@@ -4,7 +4,8 @@
 In your HTML, define one or more SVG elements with the class <code>legit-marquee</code>:
 
 <code>
-	<svg class="legit-marquee" viewBox="-50 -50 1070 750"
+
+<svg class="legit-marquee" viewBox="-50 -50 1070 750"
 
 		content="Hello there!"
 		contentrepeat="20"
@@ -14,7 +15,8 @@ In your HTML, define one or more SVG elements with the class <code>legit-marquee
 		pathd="M0,308.472C0,42.37449-21.97408,2.88935,297.72748,2.88935,756.65714,2.88935,1000-47.62774,1000,273.8001c0,281.209,14.092,325.62847-315,325.62847C12.2623,599.42857,0,652.97177,0,308.472Z"
 		
 		>
-	</svg>
+</svg>
+
 </code>
 
 ## Required Attributes
