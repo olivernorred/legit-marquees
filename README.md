@@ -17,6 +17,10 @@ In your HTML, define one or more SVG elements with the class `legit-marquee`:
 </svg>
 ```
 
+and at the end: 
+```html
+<script src="/path/to/legit-marquees.js">
+```
 
 ## Required Attributes
 
