@@ -46,4 +46,4 @@ Any integer. How many times to repeat the content. Defaults to 1.
 
 ### <code>textsize</code>
 
-Any number. Resizes the text with respect to the viewbox. Defaults to 24 just cause.
+Any number. Resizes the text with respect to the viewbox. Defaults to 24 cause that's a nice number!
