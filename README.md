@@ -46,3 +46,8 @@ Any integer. How many times to repeat the content. Defaults to 1.
 ### `textsize`
 
 Any number. Resizes the text with respect to the viewbox. Defaults to 24 cause that's a nice number!
+
+
+## You can put CSS on it.
+
+The text is inline SVG so you can style it with yummy goodness like fonts and text shadows and colors and stuff. Have a good time.
