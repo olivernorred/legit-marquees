@@ -19,7 +19,13 @@ In your HTML, define one or more SVG elements with the class `legit-marquee`:
 
 and at the end: 
 ```html
-<script src="/path/to/legit-marquees.js">
+<script src="/path/to/legit-marquees.js"></script>
+```
+
+or, if you prefer to serve externally:
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/olivernorred/legit-marquees/legit-marquees.js"></script>
 ```
 
 ## Required Attributes
