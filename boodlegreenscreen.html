@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>legit-marquees</title>
+
+	<style>
+		body {
+			margin: 0;padding: 0;
+			font-family: 'Hobeaux Black';
+		}
+		svg {
+			display: block;
+			height: 100vh;
+			aspect-ratio: 1 / 1 ;
+			border: 1px dashed rgba(0, 0, 0, 0.5);
+		}
+		#demo1 {
+			font-family: "Le Murmure";
+		}
+		#textmarquee {
+			background: black;
+			fill: white;
+			height: 100vh;
+			aspect-ratio: 1 / 1 ;
+		}
+		.layover {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<svg class="legit-marquee" id="textmarquee" viewBox="20 20 1040 1040"
+
+	content="Gimme da boodle!"
+	contentrepeat="4"
+	speed="4"
+	textsize="84"
+
+	pathd="m211.77591,242.21057c80.04052,-87.01923 585.66231,-146.35053 652.03738,-39.5542c66.37506,106.79633 111.27584,585.4021 37.09195,648.68881c-74.18389,63.28671 -620.80205,138.43969 -691.08153,21.75481c-70.27948,-116.68488 -78.08831,-543.8702 1.95221,-630.88943z"
+	
+	>
+	
+	</svg>
+	<svg class="layover" viewbox="0 0 1080 1080">
+		<path d="m211.77591,242.21057c80.04052,-87.01923 585.66231,-146.35053 652.03738,-39.5542c66.37506,106.79633 111.27584,585.4021 37.09195,648.68881c-74.18389,63.28671 -620.80205,138.43969 -691.08153,21.75481c-70.27948,-116.68488 -78.08831,-543.8702 1.95221,-630.88943z" fill="#0f0"></path>
+	</svg>
+	
+	<script src="legit-marquees.js"></script>
+
+</body>
+</html>
