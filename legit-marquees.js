@@ -23,12 +23,16 @@ document.querySelectorAll("svg.legit-marquee").forEach((el, index) => {
 	// setting up content variables
 	let amount = (el.getAttribute("contentrepeat")) ? el.getAttribute("contentrepeat") : 1
 	console.log(amount)
-	let content = el.getAttribute("content").concat(" ").repeat(amount)
+	let content = (el.getAttribute("content")) ? el.getAttribute("content").concat(" ").repeat(amount) : "legit-marquees"
 	let size = (el.getAttribute("textsize")) ? el.getAttribute("textsize") : 24
-	
+	let pathd = (el.getAttribute("pathd")) ? el.getAttribute("pathd") : "m-24,63c0,-66 246,78 246,-12"
+	let speed = (el.getAttribute("speed")) ? parseFloat(el.getAttribute("speed")) : 1
+	if(!el.getAttribute("viewBox")) {
+		el.setAttribute("viewBox", "0 0 200 100")
+	}
 	// creating each path element
 	let pathElement =
-	`<path id="loop${index}" fill="transparent" d="${el.getAttribute("pathd")}"></path>`
+	`<path id="loop${index}" fill="transparent" d="${pathd}"></path>`
 
 	// creating each text element attached to a textPath element that references the above path element.
 	let textElement =
@@ -47,9 +51,8 @@ document.querySelectorAll("svg.legit-marquee").forEach((el, index) => {
 	secondtext = el.querySelectorAll(".movingtextpath")[1]
 	
 	// getting duration from speed for GSAP where speed is in points per frame (60 fps) lol
-	let s = parseFloat(el.getAttribute("speed"))
-	let direction = s/Math.abs(s)
-	let duration = Math.abs(path.getTotalLength() / (60*s))
+	let direction = speed/Math.abs(speed)
+	let duration = Math.abs(path.getTotalLength() / (60*speed))
 
 	gsap.to(firsttext, {
 		attr: {startOffset: path.getTotalLength()*direction},
