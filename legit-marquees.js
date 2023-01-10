@@ -30,6 +30,7 @@ document.querySelectorAll("svg.legit-marquee").forEach((el, index) => {
 	if(!el.getAttribute("viewBox")) {
 		el.setAttribute("viewBox", "0 0 200 100")
 	}
+	
 	// creating each path element
 	let pathElement =
 	`<path id="loop${index}" fill="transparent" d="${pathd}"></path>`
