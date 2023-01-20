@@ -1,7 +1,7 @@
 # LEGIT Marquees.
 ## These things are legit. Text around loops and stuff.
 
-[Click here to watch the video tutorial!](https://www.youtube.com/watch?v=6sHC1FIoZMo)
+[Click here to watch the video tutorial!](https://youtu.be/6sHC1FIoZMo)
 
 In your HTML, define one or more SVG elements with the class `legit-marquee`:
 

@@ -22,7 +22,6 @@ document.querySelectorAll("svg.legit-marquee").forEach((el, index) => {
 
 	// setting up content variables
 	let amount = (el.getAttribute("contentrepeat")) ? el.getAttribute("contentrepeat") : 1
-	console.log(amount)
 	let content = (el.getAttribute("content")) ? el.getAttribute("content").concat(" ").repeat(amount) : "legit-marquees"
 	let size = (el.getAttribute("textsize")) ? el.getAttribute("textsize") : 24
 	let pathd = (el.getAttribute("pathd")) ? el.getAttribute("pathd") : "m-24,63c0,-66 246,78 246,-12"
@@ -62,9 +61,9 @@ document.querySelectorAll("svg.legit-marquee").forEach((el, index) => {
 	})
 
 	gsap.fromTo(secondtext,{
-		attr: {startOffset: -direction*path.getTotalLength() + 0.5*direction}
+		attr: {startOffset: -direction*path.getTotalLength() + (1 + speed)*direction}
 	}, {
-		attr: {startOffset: 0.5*direction},
+		attr: {startOffset: (1 + speed)*direction},
 		duration: duration,
 		repeat: -1
 	})
